@@ -1,0 +1,15 @@
+defaults:
+  container_name: ""
+  container_version: "latest"
+  desired_count: 2
+  minimum_healthy_percent: 100
+  maximum_percent: 200
+  health_check_interval: 30
+  health_check_timeout: 20
+  healthy_threshold_count: 2
+  health_check_grace_period_seconds: 60
+  memory_assigned: 2048
+  cpu_assigned: 2048
+  amqp_port: 5672
+  http_port: 15672
+  erlang_cookie: "SDEVOXOKDVVKHRVMRSGE"

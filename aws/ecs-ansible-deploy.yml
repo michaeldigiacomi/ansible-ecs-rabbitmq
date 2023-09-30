@@ -1,0 +1,10 @@
+# Example local run:
+# export AWS_ACCESS_KEY_ID=""
+# export AWS_SECRET_ACCESS_KEY=""
+# export AWS_REGION="{aws region}"
+# ansible-playbook -vvv --connection=local --extra-vars="environment=development aws/ecs-ansible-deploy.yml
+
+- name: "Deploy Container"
+  hosts: localhost
+  roles:
+    - deploy
